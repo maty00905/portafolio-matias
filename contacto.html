@@ -5,22 +5,43 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 ">
-  <h2 style="margin-bottom: 10px;">Contacto</h2>
+  <h2 style="margin-bottom: 10px;">Enviame tu contacto</h2>
+  <p>Completa este formulario y me llegará directamente a mi correo.</p>
 
-  <p><strong>Email:</strong> matiasoropeza@gmail.com</p>
-  <p><strong>Localidad:</strong> Rosario de Lerma</p>
-  <p><strong>Institución:</strong> UPATECO</p>
+  <form action="https://formsubmit.co/matiasoropeza@gmail.com" method="POST" style="
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+  ">
+    <!-- Oculta captcha y usa redirección -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://maty00905.github.io/">
 
-  <a href="contacto.html" 
-     style="
-       display: inline-block;
-       margin-top: 10px;
-       padding: 10px 15px;
-       background: #333;
-       color: white;
-       border-radius: 5px;
-       text-decoration: none;
-     ">
-    Ir al formulario de contacto
-  </a>
+    <label>
+      Nombre:
+      <input type="text" name="nombre" required style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+    </label>
+
+    <label>
+      Email:
+      <input type="email" name="email" required style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;">
+    </label>
+
+    <label>
+      Mensaje:
+      <textarea name="mensaje" rows="4" required style="width:100%; padding:8px; border-radius:5px; border:1px solid #ccc;"></textarea>
+    </label>
+
+    <button type="submit" style="
+      background:#333;
+      color:white;
+      padding:10px 15px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    ">
+      Enviar
+    </button>
+  </form>
 </section>
