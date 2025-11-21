@@ -3,110 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materias - Matias Oropeza</title>
+    <title>Mis Materias</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            color: #222;
-        }
-
-        header {
-            background-color: #0078ff;
-            padding: 15px;
-            color: white;
-            text-align: center;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: center;
-            background: #e0e0e0;
-            padding: 10px;
-        }
-
-        .menu a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #0078ff;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
             padding: 20px;
         }
 
-        .materia {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        h1 {
+            text-align: center;
+            color: #333;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 15px;
-            background: #0078ff;
-            color: white;
+        ul {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            list-style: none;
+        }
+
+        li {
+            font-size: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Materias cursadas</h1>
-</header>
+    <h1>Materias que estudio</h1>
 
-<div class="menu">
-    <a href="index.html">Inicio</a>
-    <a href="materias.html">Materias</a>
-</div>
-
-<div class="container">
-
-    <h2>Mis materias</h2>
-
-    <div class="materia">
-        <h3>Programación Web</h3>
-        <p>Aprendí HTML, CSS y JavaScript para construir páginas web completas.</p>
-    </div>
-
-    <div class="materia">
-        <h3>Programación Móvil</h3>
-        <p>Introducción al desarrollo de aplicaciones móviles.</p>
-    </div>
-
-    <div class="materia">
-        <h3>Práctica Profesional</h3>
-        <p>Trabajo práctico con proyectos reales y desarrollo aplicado.</p>
-    </div>
-
-    <div class="materia">
-        <h3>HTML</h3>
-        <p>Estructura de páginas web y etiquetas principales.</p>
-    </div>
-
-    <div class="materia">
-        <h3>CSS</h3>
-        <p>Diseño, estilos, maquetación y responsive design.</p>
-    </div>
-
-    <div class="materia">
-        <h3>JavaScript</h3>
-        <p>Interactividad, lógica de programación y manejo del DOM.</p>
-    </div>
-
-</div>
-
-<footer>
-    <p>© 2025 - Portafolio de Matias Oropeza</p>
-</footer>
+    <ul>
+        <li>Programación Web</li>
+        <li>Programación Móvil</li>
+        <li>Base de Datos</li>
+        <li>Análisis y Diseño de Sistemas</li>
+    </ul>
 
 </body>
 </html>
+
+
+  
